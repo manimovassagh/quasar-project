@@ -16,6 +16,7 @@
           color="primary"
           v-bind="$attrs"
         />
+        <!-- {{$refs.log}} -->
         <q-btn
           @click="
             $emit('accept');
@@ -34,4 +35,5 @@
 <script setup>
 import { computed, ref } from "vue";
 const dialog = ref(true);
+
 </script>
