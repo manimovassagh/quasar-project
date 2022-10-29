@@ -34,6 +34,7 @@
 
 <script setup>
 import { computed, ref } from "vue";
-const dialog = ref(true);
-
+const log = ref();
+const dialog = ref(false);
+console.log(log.value);
 </script>
