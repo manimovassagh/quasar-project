@@ -1,7 +1,7 @@
 <template>
   <div>test</div>
   <DialogSample @accept="logger"></DialogSample>
-  <CustomBtnVue @mousemove="fn"></CustomBtnVue>
+  <CustomBtnVue color="amber" label="Goldenrod"></CustomBtnVue>
   <q-input
     :error="hasError"
     :error-message="errorMeessage"
@@ -25,7 +25,7 @@ function logger() {
   toggle.value = !toggle.value;
 }
 function fn() {
-  console.log("mouse move");
+  alert("oops !! no copy");
 }
 
 watch(text, (newtext, oldText) => {
